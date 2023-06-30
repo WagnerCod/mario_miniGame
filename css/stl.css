@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Press+Start+2P&display=swap');
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+.titulo{
+    padding: 30px 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.game{
+    margin:0px auto;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#5c94fc, rgb(255, 222, 160)) ;
+}
+hr{
+    border: 15px solid  rgb(25, 138, 25);
+}
+
+.bloco div{
+    margin: 0;
+    height: 200px;
+    background-color:#8c3508;
+}
+.nuvem{
+    width: 600px;
+    position: absolute;
+    right: 80px;
+    animation: nuvemanimation 3s infinite linear;
+}
+.cano{
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    animation: cano-animation 1.6s infinite linear;
+
+}
+.mario{
+    width: 120px;
+    position: absolute;
+    bottom: 0px;  
+}
+.mariojump{
+    animation: mariojump 700ms ease-out;
+}
+@keyframes cano-animation {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes mariojump {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom:0%;
+    }
+}
+@keyframes nuvemanimation {
+    from{
+        right: -500px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+footer{
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 40px;
+}
